@@ -1,5 +1,6 @@
 var http = require('http');
 //  require 指令来载入 http 模块
+// 匿名函数
 http.createServer(function (request, response) {
     // http.createServer() 方法创建服务器
     response.writeHead(200, {'Content-Type': 'text/plain'});
