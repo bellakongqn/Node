@@ -10,7 +10,7 @@ http.createServer( function (request, response) {
    
    console.log("Request for " + pathname + " received.");
    
-   fs.readFile(pathname.substr(1), function (err, data) {
+   fs.readFile('.tabpathname.substr(1)', function (err, data) {
       if (err) {
          console.log(err);
          response.writeHead(404, {'Content-Type': 'text/html'});
@@ -23,4 +23,4 @@ http.createServer( function (request, response) {
 }).listen(8080);
  
 // 控制台会输出以下信息
-console.log('Server running at http://127.0.0.1:8080/');
+console.log('Server running at http://127.0.0.1:8080/index.html');
